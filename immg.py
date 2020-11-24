@@ -11,13 +11,13 @@ Parameter setting
 '''
 column=['日期','管制站','入境:香港居民','入境:內地訪客','入境:其他訪客','入境:總計',
         '出境:香港居民', '出境:內地訪客', '出境:其他訪客', '出境:總計']
-date=datetime(2020, 8, 1)
+date=datetime(2020, 8, 1) #change if necessary
 
 '''
 Main program
 '''
 raw=pd.DataFrame(columns=column)
-while date != datetime(2020, 11, 23):
+while date != datetime(2020, 11, 23): #change if necessary
     mmdd=str(date.month).zfill(2)+str(date.day).zfill(2)
     date+=timedelta(days=1)
 
